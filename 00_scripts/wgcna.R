@@ -10,8 +10,6 @@ ls()
 #install.packages("WGCNA")
 library("WGCNA")
 
-#setwd
-setwd("02_data/")
 # The following setting is important, do not omit.
 options(stringsAsFactors = FALSE);
 
