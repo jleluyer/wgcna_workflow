@@ -16,7 +16,7 @@ setwd("02_data/")
 options(stringsAsFactors = FALSE);
 
 #Read in the expr data set
-load("logcpm.test.nofilt.Rda")
+logcpm.temperature <-read.table("02_data/logcpm_edger.csv",header=T)
 # Take a quick look at what is in the data set:
 dim(logcpm.temperature)
 
@@ -97,7 +97,7 @@ nSamples = nrow(datExpr)
 #=====================================================================================
 
 
-allTraits = read.table("trait_muscle.csv",sep="\t", header=T);
+allTraits = read.table("02_data/traits.csv",sep="\t", header=T);
 names(allTraits)
 
 # Form a data frame analogous to expression data that will hold the clinical traits.
