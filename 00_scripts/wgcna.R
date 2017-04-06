@@ -118,7 +118,7 @@ collectGarbage();
 # Re-cluster samples
 sampleTree2 = hclust(dist(datExpr), method = "average")
 # Convert traits to a color representation: white means low, red means high, grey means missing entry
-traitColors = numbers2colors(datTraits, signed = FALSE);
+traitColors = numbers2colors(datTraits, signed = TRUE);
 # Plot the sample dendrogram and the colors underneath.
 plotDendroAndColors(sampleTree2, traitColors,
                     groupLabels = names(datTraits), 
